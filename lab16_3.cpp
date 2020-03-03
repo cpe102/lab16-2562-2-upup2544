@@ -29,7 +29,8 @@ z[i]=rand()%10;
 return z;
 }
 void showVector(vector<int> x){
-for(int j=0;j<x.size();j++)cout<<x[j]<<" ";
+cout<<" [ ";
+for(int j=0;j<x.size();j++)cout<<x[j]<<" ";cout<<" ] ";
 }
 int dotProduct(vector<int> x,vector<int> y){
 int z;
