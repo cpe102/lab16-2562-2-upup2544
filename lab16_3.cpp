@@ -21,4 +21,19 @@ int main(){
 	return 0;
 }
 
-//Write Definition of randomVector() showVector() and dotProduct() here
+vector<int> randomVector(int x){
+ vector<int> z(x);
+for(int i=0;i<x;i++){
+z[i]=rand()%10;
+}
+return z;
+}
+void showVector(vector<int> x){
+for(int j=0;j<x.size();j++)cout<<x[j]<<" ";
+}
+int dotProduct(vector<int> x,vector<int> y){
+int z;
+for(int i=0;i<x.size();i++){
+	z+=x[i]*y[i];
+}return z;
+} 
